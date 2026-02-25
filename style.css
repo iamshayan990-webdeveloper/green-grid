@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  padding: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 0.6fr;
+  gap: 10px;
+  height: 95vh;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.col.small .box {
+  flex: 1;
+}
+
+.box {
+  background: #9acd32;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.big {
+  height: 100%;
+  width: 230px;
+}
