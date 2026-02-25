@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+    padding: 10px;
+}
+
+.vertical-grid {
+    display: grid;
+    /* 6 Columns banaye hain vertical layout ke liye */
+    grid-template-columns: repeat(6, 1fr);
+    /* 12 Rows ka base taaki mathematical division sahi baithe */
+    grid-template-rows: repeat(12, 1fr);
+    gap: 8px;
+    height: 100%;
+    width: 100%;
+}
+
+.brick {
+    background-color: #9ACD32; /* Same Green Color */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Vertical Spanning Classes */
+.row-span-12 { grid-row: span 12; }
+.row-span-6  { grid-row: span 6; }
+.row-span-4  { grid-row: span 4; }
+.row-span-3  { grid-row: span 3; }
+.row-span-2  { grid-row: span 2; }
+.row-span-1  { grid-row: span 1; }
